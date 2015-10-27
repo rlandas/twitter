@@ -99,11 +99,11 @@ class TwitterClient
         $info = curl_getinfo($curl);
         curl_close($curl);
 
-        // create response headers
-        if (isset($info['content_type']) && isset($info['size_download'])) {
-            header('Content-Type: ' . $info['content_type']);
-            header('Content-Length: ' . $info['size_download']);
-        }
+//         // create response headers
+//         if (isset($info['content_type']) && isset($info['size_download'])) {
+//             header('Content-Type: ' . $info['content_type']);
+//             header('Content-Length: ' . $info['size_download']);
+//         }
 
         return $response;
     }
