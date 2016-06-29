@@ -2,8 +2,6 @@
 
 namespace Rlandas\Twitter;
 
-use Doctrine\Tests\DBAL\Types\VarDateTimeTest;
-
 class TwitterClient
 {
 
